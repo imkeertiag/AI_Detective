@@ -1,0 +1,24 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "fraud-analyzer"
+version = "0.1.0"
+description = "Local-first insurance claim fraud analyzer MVP using deterministic rules and free AI API adapters."
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+  "faker>=30.0.0",
+  "numpy>=1.26",
+  "pandas>=2.2",
+  "pypdf>=4.0",
+  "python-dotenv>=1.0",
+  "rapidfuzz>=3.1.0",
+  "requests>=2.31",
+  "scikit-learn>=1.4",
+  "pytest>=8.0",
+]
+
+[tool.pytest.ini_options]
+pythonpath = ["."]
