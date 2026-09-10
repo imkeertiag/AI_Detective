@@ -2,6 +2,48 @@
 
 AI Detective is a fraud-detection and document-risk analysis platform for insurance, banking, loans, and real-estate workflows. It helps teams spot suspicious claims, unfair contract terms, and mismatches before approving or paying out.
 
+Idea Description: A system that helps people to understand the contract clauses and highlighting risky/unfair terms also it can help banks, insurance companies, and real estate firms automatically detect suspicious/fraudulent claims and documents before processing them hence saving money and time.
+
+How it works:
+Person uploads rental agreement, loan contract, employment offer, insurance policy, pdf claims
+Document AI extracts all text, dates, amounts names
+Gemini analyses the document clause, dates, amounts and identifies:
+Unfair terms
+What could go wrong
+compares it to market standards
+Negotiable clauses
+Checks whether dates, amounts make sense
+Benefits the person by highlighting risky/unfair terms, and big firms analyse claims faster than usual
+
+I would like to explain my idea with real life example:
+
+The problem: 1. ICICI receives 50 insurance claims per day. Each claim needs 2-3 hours of manual review:
+Is claimant really who they say?
+Does claim date fall within policy period?
+Do hospital charges match claimed amount?
+Is medical history consistent?
+
+My system flags it as:
+
+FRAUD SIGNAL 1: Amount inflation
+   Hospital bill: ₹3,50,000
+   Claimed: ₹5,50,000
+   Discrepancy: 57% OVERSTATED
+   
+FRAUD SIGNAL 2: Name inconsistency
+   Policy: "Rajesh Kumar Singh"
+   Hospital bill: "Rajesh K Singh"
+   Bill witness: "Rajeesh Kumar Singh" = 3 different spellings (copy-paste from multiple sources)
+   
+FRAUD SIGNAL 3: Duplicate claim detected
+   Same accident date (10-Feb-2024)
+   Same hospital (Apollo Hospital, Delhi)
+   Same bill total (₹3,50,000)
+   Found 2 other similar claims from different "claimants"
+   = RING FRAUD (organized claim duplication)
+
+In similar way we can analyse corporate bonds and real estate frauds.
+
 The project combines:
 - Python FastAPI backend
 - React.js frontend
